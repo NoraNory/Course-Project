@@ -1,0 +1,157 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background: #f5f7fa;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 20px 40px;
+    background: #1e3a8a;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+.banner {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background: url("back\ .jpg");
+    position: relative;
+
+}
+
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.banner h2,
+.banner p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.hero{
+   text-align: center;
+   padding: 50px;
+   
+
+}
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px 15px;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+.details {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.details iframe {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+}
+
+.details p {
+    flex: 1;
+    line-height: 1.8;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 180px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+}
