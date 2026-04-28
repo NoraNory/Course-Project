@@ -88,9 +88,13 @@ header nav a:hover {
 }
 
 
+
+
+
+
 .card {
     background: white;
-    border-radius: 10px;
+    border-radius: 2px;
     overflow: hidden;
     text-decoration: none;
     color: black;
